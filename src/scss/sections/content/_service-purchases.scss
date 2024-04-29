@@ -1,0 +1,66 @@
+.purchase {
+    .purchase-count-container {
+        // width: 896px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 64px;
+        @media screen and (max-width: 1285px) {
+            gap: 20px;
+        }
+        .service-total-price {
+            // display: grid;
+            // grid-template-columns: 3fr 1fr;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            .service-count {
+                background-color: $grey-50;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                padding: 5px 30px;
+                border-radius: 8px;
+                max-width: calc(800px - 185px * 2 - 64px - 8px);
+                @include small-tablet {
+                    width: 100%;
+                }
+                .count {
+                    width: 140px;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 28px;
+                }
+            }
+
+            .total-price {
+                @include flex-center-center;
+                background-color: $grey-50;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22.86px;
+                text-align: center;
+                padding: 13px;
+                width: 185px;
+                border-radius: 8px;
+                @include small-tablet {
+                    width: 100%;
+                }
+            }
+        }
+        .purchase-button {
+            @include action-button;
+            @include small-tablet {
+                // min-width: 100% ;
+                width: 336px;
+            }
+        }
+    }
+}

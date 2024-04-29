@@ -1,0 +1,185 @@
+// Display
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Fonts
+@mixin montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+// Buttons
+@mixin icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+// Section
+@mixin section-title {
+    color: $black;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+// Cards
+@mixin basic-shadow-card {
+    background-color: $white;
+    box-shadow: 0 3px 40px rgba(32, 32, 32, 0.07);
+}
+
+@mixin content-shadow-card {
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin: 24px auto;
+}
+
+@mixin aside-shadow-card {
+    @include basic-shadow-card;
+    padding: 18px 20px;
+    border-radius: 8px;
+    width: 256px;
+    margin: 24px auto;
+}
+
+@mixin aside-other-services-card {
+    @include basic-shadow-card;
+    padding: 0;
+    border-radius: 15px;
+    // override .aside .shadow-card
+    margin: 0 0 10px 0;
+}
+
+@mixin other-service-shadow-card {
+    @include basic-shadow-card;
+    padding: 0;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+@mixin navbar-shadow-card {
+    background-color: $white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px 17px;
+    border-radius: 8px;
+}
+
+// Action Button
+@mixin action-button {
+    background-color: $primary-900;
+    color: $white;
+    border: 0;
+    min-width: 185px;
+    height: 48px;
+    padding: 14px 24px 14px 24px;
+    gap: 10px;
+    border-radius: 8px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+// Navbar Toggler
+@mixin navbar-toggler {
+    // position: absolute;
+    @include flex-center-center;
+    right: 0px;
+    top: 0px;
+    background-color: $grey-50;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    img {
+        width: 18px;
+    }
+}
+
+/**************
+| Typography
+***************/
+
+@mixin display-xs {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    letter-spacing: 0.005em;
+}
+
+@mixin text-xl {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    letter-spacing: 0.005em;
+}
+@mixin text-lg {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    letter-spacing: 0.005em;
+}
+
+@mixin text-md {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0.005em;
+}
+@mixin text-sm {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+}
+
+/******************
+| XX Typography XX
+*******************/
+
+/***********************
+| REPONIVE BREAKPOINTS
+************************/
+
+@mixin large-laptop-to-more {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin labtop-to-large-laptop {
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin large-labtop {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin labtop {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin small-tablet {
+    @media screen and (max-width: 688px) {
+        @content;
+    }
+}
+
+@mixin large-mobile {
+    @media screen and (max-width: 444px) {
+        @content;
+    }
+}
+
+@mixin small-mobile {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}

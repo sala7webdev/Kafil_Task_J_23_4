@@ -1,0 +1,24 @@
+@import "_variables";
+@import "_colors";
+@import "_mixins";
+@import "_main";
+
+// Navbar
+@import "sections/navbar";
+
+// Layout
+@import "sections/main";
+// Content
+@import "sections/content/service-main-info";
+@import "sections/content/service-addons";
+@import "sections/content/service-purchases";
+@import "sections/content/service-ratings";
+
+// Aside
+@import "sections/aside/seller-card";
+@import "sections/aside/info";
+@import "sections/aside/share";
+@import "sections/aside/other-seller-services";
+
+// Footer
+@import "sections/other-services";

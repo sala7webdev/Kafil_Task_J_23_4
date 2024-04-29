@@ -1,0 +1,37 @@
+.service-info-card {
+    .service-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2px;
+        .service-info-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+            .title {
+                @include flex-center-center;
+                .icon {
+                    margin-right: 10px;
+                    width: 22px;
+                    height: 22px;
+                    // background-color: red;
+                    @include flex-center-center;
+                }
+                .text {
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: left;
+                }
+            }
+            .value {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                min-width: 90px;
+            }
+        }
+    }
+}

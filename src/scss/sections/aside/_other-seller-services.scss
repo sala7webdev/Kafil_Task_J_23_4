@@ -1,0 +1,110 @@
+.seller-other-services {
+    margin-bottom: 20px;
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        letter-spacing: 0.005em;
+        text-align: left;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        .see-more {
+            @include flex-center-center;
+            cursor: pointer;
+            .text {
+                color: $grey-900;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.8px;
+                &:hover {
+                    color: $primary-900;
+                }
+            }
+        }
+    }
+    .services-container {
+        margin-top: 24px;
+        .service-item {
+            display: flex;
+            align-items: center;
+            height: 108px;
+            width: 100%;
+            .service-image {
+                height: 108px;
+                width: 108px;
+            }
+            .service-info {
+                margin: 15px 12px;
+                position: relative;
+                .title {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 14px;
+                }
+                .rate-purchase-count {
+                    color: $grey-400;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 16px;
+                    .rate {
+                        display: flex;
+                        align-items: center;
+                        // margin-right: 10px;
+                        .stars {
+                            margin-right: 6px;
+                        }
+                        .average {
+                            font-size: 12px;
+                            margin-right: 5px;
+                        }
+                        .count {
+                            font-size: 12px;
+                        }
+                    }
+                    .price-container {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 10px;
+                        .icon {
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 4px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .price {
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .favorite {
+                    cursor: pointer;
+                    position: absolute;
+                    bottom: -2px;
+                    right: 0px;
+                    .full {
+                        display: none;
+                    }
+                    .empty {
+                        display: inline-block;
+                    }
+                    &.checked {
+                        .full {
+                            display: inline-block;
+                        }
+                        .empty {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

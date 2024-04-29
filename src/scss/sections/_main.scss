@@ -1,0 +1,88 @@
+main {
+    width: auto;
+    margin: 64px 7.2%;
+
+    @include labtop {
+        margin: 64px 20px;
+    }
+    @include small-mobile{
+        margin: 64px 0;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: calc(100% - $aside-width - 40px) $aside-width;
+    gap: 40px;
+    @include labtop {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content {
+        position: relative;
+        .shadow-card {
+            @include content-shadow-card;
+        }
+
+        section {
+            margin: 48px auto;
+        }
+        .action-button {
+            @include action-button;
+        }
+    }
+
+    .aside {
+        width: 100%;
+        // background-color: red;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        @include labtop {
+            background-color: $white;
+            border-left: 1px solid $grey-50;
+            position: fixed;
+            z-index: 9;
+            width: 380px;
+            right: -400px;
+            top: 0;
+            overflow-y: auto;
+            // display: none;
+            height: 100vh;
+            padding: 5px 0 50px 0;
+
+            &.show {
+                display: block;
+                right: -0px;
+            }
+        }
+        .shadow-card {
+            @include aside-shadow-card;
+        }
+        .seller-other-services {
+            .shadow-card {
+                @include aside-other-services-card;
+            }
+        }
+        .aside-container {
+            width: 296px;
+            margin: 10px auto;
+        }
+
+        .seller-other-services {
+            width: 100%;
+        }
+    }
+}
+
+.container-fluid {
+    display: flex;
+    @include labtop {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

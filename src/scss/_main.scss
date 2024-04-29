@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include montserrat;
+    background-color: $base-bg;
+}
+
+
+.aside-toggler {
+    @include action-button;
+    cursor: pointer;
+    min-width: 135px;
+    height: 40px;
+    padding: 2px;
+    position: fixed;
+    z-index: 10;
+    right: -50px;
+    top: 250px;
+    transform: rotate(-90deg);
+    display: none;
+    @include labtop {
+        display: block;
+    }
+}
+
+.suggested-services {
+    .shadow-card {
+        @include other-service-shadow-card;
+    }
+}
+
+.navbar {
+    .shadow-card {
+        @include navbar-shadow-card;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $grey-300; 
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary-900 
+  }
+
+
+//   TEST
+// .swiper {
+//     width: 600px;
+//     height: 300px;
+//   }

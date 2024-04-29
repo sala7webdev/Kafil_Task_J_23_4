@@ -1,0 +1,13 @@
+.share-card{
+    .icons{
+        margin-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon{
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+        }
+    }
+}

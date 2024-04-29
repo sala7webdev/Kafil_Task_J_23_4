@@ -1,0 +1,113 @@
+.add-ons {
+    .add-ons-header {
+        display: flex;
+        justify-content: space-between;
+        .select-all {
+            @include flex-center-center;
+            @include text-xl;
+            cursor: pointer;
+            color: $grey-300;
+            .icon {
+                margin-right: 10px;
+                width: 20px;
+                height: 20px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .full {
+                    display: none;
+                }
+                .empty {
+                    display: inline-block;
+                }
+            }
+            .text {
+                color: $grey-300;
+                font-size: 18px;
+            }
+            &:hover {
+                .icon {
+                    .full {
+                        display: inline-block;
+                    }
+                    .empty {
+                        display: none;
+                    }
+                }
+                .text {
+                    color: $primary-900;
+                }
+            }
+            &.checked {
+                .icon {
+                    .full {
+                        display: inline-block;
+                    }
+                    .empty {
+                        display: none;
+                    }
+                }
+                .text {
+                    color: $primary-900;
+                }
+            }
+        }
+    }
+    .add-on-item {
+        display: flex;
+        flex-direction: column;
+        .select-item {
+            display: flex;
+            margin-bottom: 24px;
+
+            .icon {
+                position: relative;
+                margin-right: 16px;
+                .full {
+                    display: none;
+                }
+                .empty {
+                    display: inline-block;
+                }
+                &.checked {
+                    .full {
+                        display: inline-block;
+                    }
+                    .empty {
+                        display: none;
+                    }
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                input {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: -13px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+            .title {
+                @include display-xs;
+                font-size: 16px;
+                color: $grey-800;
+                font-weight: 500;
+            }
+        }
+        .tags {
+            .tag {
+                background-color: $grey-50;
+                margin-right: 9px;
+                padding: 10px 5px;
+                border-radius: 8px;
+                color: $primary-900;
+                font-weight: 500;
+            }
+        }
+    }
+}
