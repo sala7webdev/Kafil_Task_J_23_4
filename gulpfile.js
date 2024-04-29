@@ -41,16 +41,17 @@ function joinJSFiles() {
 }
 
 
-
 function watch() {
-  buildHTML()
-  combilecss()
-  joinJSFiles()
-
   gulp.watch("./src/**/*.html", series(buildHTML));
   gulp.watch("./src/scss/**/*.scss", series(combilecss));
   gulp.watch("./src/scripts/**/*.js", series(joinJSFiles));
 }
+
+// Build task to prepare for deployment
+gulp.task('build', gulp.series(buildHTML, combilecss, joinJSFiles));
+
+// Default task
+gulp.task('default', gulp.series('build'));
 
 
 exports.watch = watch;
