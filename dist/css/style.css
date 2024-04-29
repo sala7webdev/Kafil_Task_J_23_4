@@ -293,7 +293,7 @@ nav .navbar-right-buttons .profile-menu-container li .text {
   color: rgb(105, 111, 121);
 }
 nav .navbar-right-buttons .profile-menu-container li .text.logout {
-  color: red;
+  color: rgb(245, 99, 66);
 }
 nav .navbar-right-buttons .profile-menu-container li .user-container {
   display: flex;
@@ -964,13 +964,11 @@ section.ratings .rating-items .rating-item .progress-bar-count .count {
 }
 @media screen and (max-width: 688px) {
   section.ratings .rating-items .rating-item .progress-bar-count {
-    background-color: red;
     width: 100%;
   }
 }
 @media screen and (max-width: 444px) {
   section.ratings .rating-items .rating-item .progress-bar-count {
-    background-color: red;
     width: 40%;
   }
 }
@@ -1237,7 +1235,7 @@ section.ratings .reviews .write-review .write-review-container .post-review {
   cursor: pointer;
 }
 .seller-other-services .header .see-more .text {
-  color: rgb(30, 30, 30);
+  color: rgb(195, 197, 200);
   font-size: 14px;
   font-weight: 500;
   line-height: 16.8px;

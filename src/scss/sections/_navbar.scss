@@ -175,7 +175,7 @@ nav {
                     line-height: 16.8px;
                     color: $grey-500;
                     &.logout {
-                        color: red;
+                        color: $error-300;
                     }
                 }
 
@@ -216,7 +216,6 @@ nav {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                // background: red;
                 width: 100%;
                 .language-switcher {
                     @include flex-center-center;

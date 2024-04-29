@@ -97,11 +97,9 @@ section.ratings {
                     }
                 }
                 @include small-tablet {
-                    background-color: red;
                     width: 100%;
                 }
                 @include large-mobile {
-                    background-color: red;
                     width: 40%;
                 }
                 @include small-mobile {
