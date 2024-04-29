@@ -420,6 +420,8 @@ main {
   position: relative;
 }
 .container .content .shadow-card {
+  background-color: #ffffff;
+  box-shadow: 0 3px 40px rgba(32, 32, 32, 0.07);
   padding: 30px 20px;
   border-radius: 15px;
   margin: 24px auto;
