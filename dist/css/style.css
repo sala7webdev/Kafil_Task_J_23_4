@@ -262,8 +262,14 @@ nav .navbar-right-buttons .profile-menu-container {
   position: absolute;
   z-index: 4;
   top: -500px;
-  right: 0;
+  right: 30px;
   padding: 0 15px;
+}
+@media screen and (max-width: 444px) {
+  nav .navbar-right-buttons .profile-menu-container {
+    width: 260px;
+    right: 40px;
+  }
 }
 nav .navbar-right-buttons .profile-menu-container.show {
   top: 56px;

@@ -144,9 +144,14 @@ nav {
             position: absolute;
             z-index: 4;
             top: -500px;
-            right: 0;
+            right: 30px;
             padding: 0 15px;
             // display: none;
+            @include large-mobile{
+                width:260px;
+                right: 40px;
+            }
+
             &.show {
                 top: 56px;
                 // display: flex;
