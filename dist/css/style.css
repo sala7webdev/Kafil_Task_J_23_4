@@ -103,6 +103,11 @@ nav {
   border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 26px rgba(200, 200, 200, 0.55);
 }
+@media screen and (max-width: 444px) {
+  nav {
+    padding: 0 10px;
+  }
+}
 nav .navbar-brand {
   display: flex;
   justify-content: center;
@@ -178,6 +183,11 @@ nav .navbar-nav .nav-item .nav-link .navbar-icon {
   width: 30px;
   height: 30px;
   margin-bottom: 8px;
+}
+@media (max-width: 1024px) {
+  nav .navbar-nav .nav-item .nav-link .navbar-icon {
+    margin-bottom: 0;
+  }
 }
 nav .navbar-nav .nav-item .nav-link .navbar-icon img {
   width: 100%;
