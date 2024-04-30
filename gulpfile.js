@@ -6,7 +6,6 @@ const replace = require('gulp-replace');
 
 const fs = require('fs');
 const path = require('path');
-var uglifycss = require('gulp-uglifycss');
 const uglify = require('gulp-minify');
 
 
@@ -33,10 +32,6 @@ function buildHTML() {
 function combileAndMinifyCSS() {
   return gulp.src('./src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(uglifycss({
-      "maxLineLen": 80,
-      "uglyComments": true
-    }))
     .pipe(gulp.dest('./dist/css'));
 };
 
