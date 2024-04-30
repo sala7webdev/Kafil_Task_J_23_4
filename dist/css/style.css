@@ -256,7 +256,7 @@ nav .navbar-right-buttons .profile-menu .profile-image {
   height: 42px;
   border-radius: 22px;
 }
-nav .navbar-right-buttons .profile-menu-container {
+nav .navbar-right-buttons .navbar-icon-menu-container {
   transition: all 0.5s ease;
   width: 320px;
   position: absolute;
@@ -266,113 +266,187 @@ nav .navbar-right-buttons .profile-menu-container {
   padding: 0 15px;
 }
 @media screen and (max-width: 444px) {
-  nav .navbar-right-buttons .profile-menu-container {
+  nav .navbar-right-buttons .navbar-icon-menu-container {
     width: 260px;
     right: 40px;
   }
 }
-nav .navbar-right-buttons .profile-menu-container.show {
+nav .navbar-right-buttons .navbar-icon-menu-container.show {
   top: 56px;
 }
-nav .navbar-right-buttons .profile-menu-container ul {
+nav .navbar-right-buttons .navbar-icon-menu-container .title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
-nav .navbar-right-buttons .profile-menu-container li {
+nav .navbar-right-buttons .navbar-icon-menu-container .title-container .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 191, 115);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 14px;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container ul {
+  width: 100%;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li {
   cursor: pointer;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 14px 0;
 }
-nav .navbar-right-buttons .profile-menu-container li:not(:last-child) {
+nav .navbar-right-buttons .navbar-icon-menu-container li:not(:last-child) {
   border-bottom: 2px solid rgb(246, 246, 246);
 }
-nav .navbar-right-buttons .profile-menu-container li .icon {
+nav .navbar-right-buttons .navbar-icon-menu-container li .icon {
   width: 22px;
   height: 22px;
 }
-nav .navbar-right-buttons .profile-menu-container li .text {
+nav .navbar-right-buttons .navbar-icon-menu-container li .text {
   margin-left: 8px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.8px;
   color: rgb(105, 111, 121);
 }
-nav .navbar-right-buttons .profile-menu-container li .text.logout {
+nav .navbar-right-buttons .navbar-icon-menu-container li .text.logout {
   color: rgb(245, 99, 66);
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container {
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li {
+  background-color: rgb(246, 246, 246);
+  padding: 14px 8px;
+  border-radius: 10px;
+  margin: 6px auto;
+  border: 2px solid rgb(230, 234, 239);
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li.read {
+  background-color: #ffffff;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 4px auto;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container .notification-img {
+  min-width: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 22px;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container .notification-img img {
+  width: 100%;
+  height: 100%;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container .notification-info {
+  margin-left: 12px;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container .notification-info .title {
+  font-size: 12px;
+  font-weight: 600;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container .notification-info .body {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.notification-li .notification-container .notification-info .time {
+  font-weight: 600;
+  font-size: 10px;
+  color: rgb(51, 51, 51);
+  margin-top: 6px;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.show-all {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: rgb(134, 146, 166);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 0;
+  margin: 5px 0;
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li.show-all:hover {
+  color: rgb(29, 191, 115);
+}
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container .profile-img {
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container .profile-img {
   width: 42px;
   height: 42px;
   border-radius: 22px;
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container .profile-img.online {
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container .profile-img.online {
   border: 1px solid rgb(29, 191, 115);
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container .profile-img img {
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container .profile-img img {
   width: 100%;
   height: 100%;
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container .user-info {
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container .user-info {
   margin-left: 10px;
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container .user-info .name {
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container .user-info .name {
   font-size: 14px;
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
-nav .navbar-right-buttons .profile-menu-container li .user-container .user-info .job {
+nav .navbar-right-buttons .navbar-icon-menu-container li .user-container .user-info .job {
   font-size: 12px;
   font-weight: 400;
   margin-top: 4px;
   line-height: 14.63px;
   color: rgb(134, 146, 166);
 }
-nav .navbar-right-buttons .profile-menu-container .language-container {
+nav .navbar-right-buttons .navbar-icon-menu-container .language-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-nav .navbar-right-buttons .profile-menu-container .language-container .language-switcher {
+nav .navbar-right-buttons .navbar-icon-menu-container .language-container .language-switcher {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-nav .navbar-right-buttons .profile-menu-container .language-container .language-switcher .divieder {
+nav .navbar-right-buttons .navbar-icon-menu-container .language-container .language-switcher .divieder {
   width: 1px;
   height: 19px;
   display: block;
   margin: 0 6px;
   background-color: rgb(230, 234, 239);
 }
-nav .navbar-right-buttons .profile-menu-container .language-container .language-switcher .title {
+nav .navbar-right-buttons .navbar-icon-menu-container .language-container .language-switcher .title {
   font-family: "Cairo";
   color: rgb(0, 0, 0);
   font-size: 14px;
 }
-nav .navbar-right-buttons .profile-menu-container .language-container .language-switcher .flag {
+nav .navbar-right-buttons .navbar-icon-menu-container .language-container .language-switcher .flag {
   margin-top: 2px;
 }
-nav .navbar-right-buttons .profile-menu-container .mode-container {
+nav .navbar-right-buttons .navbar-icon-menu-container .mode-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .navbar-right-buttons .profile-menu-container .mode-container .mode-switcher {
+nav .navbar-right-buttons .navbar-icon-menu-container .mode-container .mode-switcher {
   width: 30px;
   height: 19px;
   background-color: rgb(29, 191, 115);
   border-radius: 15px;
   position: relative;
 }
-nav .navbar-right-buttons .profile-menu-container .mode-container .mode-switcher .toggler {
+nav .navbar-right-buttons .navbar-icon-menu-container .mode-container .mode-switcher .toggler {
   width: 15px;
   height: 15px;
   background-color: #ffffff;

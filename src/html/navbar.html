@@ -65,7 +65,11 @@
 
       <span class="count">10</span>
     </button>
-    <button class="icon-button notifications-button" title="notifications">
+    <button
+      class="icon-button notifications-button"
+      title="notifications"
+      id="notificationsIconButton"
+    >
       <span class="icon"
         ><img src="img/icons/navbar/notifications.png" alt="notifications"
       /></span>
@@ -81,7 +85,68 @@
       <img src="img/icons/navbar/toggler.svg" alt="" />
     </div>
 
-    <div class="profile-menu-container shadow-card" id="profileMenu">
+    <!-- notifications menu -->
+    <div
+      class="notifications-menu-container navbar-icon-menu-container shadow-card"
+      id="notificationsMenu"
+    >
+      <ul>
+        <li>
+          <div class="title-container">
+            <h3 class="navbar-icon-menu-title">Notifications</h3>
+            <span class="count">10</span>
+          </div>
+        </li>
+        <li class="notification-li">
+          <div class="notification-container">
+            <div class="notification-img">
+              <img src="img/profile-image.png" alt="porfile image" />
+            </div>
+            <div class="notification-info">
+              <p class="body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                repudiandae.
+              </p>
+              <p class="time">6:00 PM</p>
+            </div>
+          </div>
+        </li>
+        <li class="notification-li read">
+          <div class="notification-container">
+            <div class="notification-img">
+              <img src="img/profile-image.png" alt="porfile image" />
+            </div>
+            <div class="notification-info">
+              <p class="body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                repudiandae.
+              </p>
+              <p class="time">5:00 PM</p>
+            </div>
+          </div>
+        </li>
+        <li class="notification-li">
+          <div class="notification-container">
+            <div class="notification-img">
+              <img src="img/profile-image.png" alt="porfile image" />
+            </div>
+            <div class="notification-info">
+              <p class="body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                repudiandae.
+              </p>
+              <p class="time">4:00 PM</p>
+            </div>
+          </div>
+        </li>
+        <li class="show-all">Show All Notifications</li>
+      </ul>
+    </div>
+    <!-- profile menu -->
+    <div
+      class="profile-menu-container navbar-icon-menu-container shadow-card"
+      id="profileMenu"
+    >
       <ul>
         <li>
           <div class="user-container">

@@ -75,7 +75,7 @@ gulp.task('uglifyjs', () => {
 function watch() {
   gulp.watch("./src/**/*.html", series(buildHTML));
   gulp.watch("./src/scss/**/*.scss", series(combileAndMinifyCSS));
-  gulp.watch("./src/scripts/**/*.js", series(joinJSFiles));
+  gulp.watch("./src/scripts/**/*.js", series(joinJSFiles, "uglifyjs"));
 }
 
 
