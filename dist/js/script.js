@@ -11,6 +11,10 @@ const profileMenu = document.getElementById("profileMenu")
 const notificationIconButton = document.getElementById("notificationsIconButton")
 const notificationMenu = document.getElementById("notificationsMenu")
 
+// Messages Menu Elements
+const messagesIconButton = document.getElementById("messagesIconButton")
+const messagesMenu = document.getElementById("messagesMenu")
+
 // Navbar Menu Elements
 const navbarMenusToggler = document.getElementById("navbarToggler");
 const navbarMenusCloser = document.getElementById("navbarCloser");
@@ -41,6 +45,18 @@ notificationIconButton.onclick = () => {
     } else {
         hideAllNavbarIconMenus();
         notificationMenu.classList.add("show")
+    }
+}
+
+// Notification Menu 
+messagesIconButton.onclick = () => {
+
+    if (messagesMenu.classList.contains("show")) {
+        messagesMenu.classList.remove("show")
+
+    } else {
+        hideAllNavbarIconMenus();
+        messagesMenu.classList.add("show")
     }
 }
 

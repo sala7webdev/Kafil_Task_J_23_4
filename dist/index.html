@@ -83,11 +83,14 @@
     </li>
   </ul>
   <div class="navbar-right-buttons">
-    <button class="icon-button messages-button" title="messages">
+    <button
+      class="icon-button messages-button"
+      title="messages"
+      id="messagesIconButton"
+    >
       <span class="icon"
         ><img src="img/icons/navbar/messages.png" alt="messages"
       /></span>
-
       <span class="count">10</span>
     </button>
     <button
@@ -108,6 +111,67 @@
     </button>
     <div class="navbar-toggler" id="navbarToggler">
       <img src="img/icons/navbar/toggler.svg" alt="" />
+    </div>
+
+    <!-- messages menu -->
+    <div
+      class="messages-menu-container navbar-icon-menu-container shadow-card"
+      id="messagesMenu"
+    >
+      <ul>
+        <li>
+          <div class="title-container">
+            <h3 class="navbar-icon-menu-title">Messages</h3>
+            <span class="count">10</span>
+          </div>
+        </li>
+        <li class="message-li">
+          <div class="message-container">
+            <div class="message-img">
+              <img src="img/profile-image.png" alt="porfile image" />
+            </div>
+            <div class="message-info">
+              <p class="title">Salah</p>
+              <p class="body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                repudiandae.
+              </p>
+              <p class="time">3:00 PM</p>
+            </div>
+          </div>
+        </li>
+        <li class="message-li read">
+          <div class="message-container">
+            <div class="message-img">
+              <img src="img/profile-image.png" alt="porfile image" />
+            </div>
+            <div class="message-info">
+              <p class="title">Salah</p>
+              <p class="body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                repudiandae.
+              </p>
+              <p class="time">2:00 PM</p>
+            </div>
+          </div>
+        </li>
+        <li class="message-li">
+          <div class="message-container">
+            <div class="message-img">
+              <img src="img/profile-image.png" alt="porfile image" />
+            </div>
+            <div class="message-info">
+              <p class="title">Salah</p>
+              <p class="body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit,
+                repudiandae.
+              </p>
+              <p class="time">1:00 PM</p>
+            </div>
+          </div>
+        </li>
+        <li class="show-all">Show All Messages</li>
+      </ul>
     </div>
 
     <!-- notifications menu -->

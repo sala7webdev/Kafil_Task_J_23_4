@@ -244,7 +244,54 @@ nav {
                         }
                     }
                 }
-                &.show-all{
+
+                &.message-li {
+                    background-color: $grey-50;
+                    padding: 14px 8px;
+                    border-radius: 10px;
+                    margin: 6px auto;
+                    border: 2px solid $grey-200;
+                    &.read {
+                        background-color: $white;
+                    }
+                    .message-container {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        margin: 4px auto;
+
+                        .message-img {
+                            min-width: 42px;
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 22px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .message-info {
+                            margin-left: 12px;
+                            .title {
+                                font-size: 12px;
+                                font-weight: 600;
+                            }
+                            .body {
+                                margin-top: 2px;;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: $grey-800;
+                            }
+                            .time {
+                                font-weight: 600;
+                                font-size: 10px;
+                                color: $grey-800;
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+                }
+                &.show-all {
                     // background-color: $grey-400;
                     display: flex;
                     justify-content: center;
@@ -255,8 +302,8 @@ nav {
                     // border: 1px solid $grey-200;
                     padding: 8px 0;
                     margin: 5px 0;
-                    &:hover{
-                        color: $primary-900 
+                    &:hover {
+                        color: $primary-900;
                     }
                 }
                 .user-container {
