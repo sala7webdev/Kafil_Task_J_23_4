@@ -3,28 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <meta name="description" content="Kaiil website for freelancing jobs" />
+   
+    
+    <!-- load swiper-bundle.min.css -->
+    <script>
+      (function () {
+        var swiperStyle = document.createElement("link");
+        swiperStyle.href =
+          "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css";
+        swiperStyle.rel = "stylesheet";
+        swiperStyle.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(swiperStyle);
+      })();
+    </script>
+
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Kafiil</title>
   </head>
   <body>
     <!-- Navbar -->
 <nav class="navbar">
   <a class="navbar-brand" href="#">
-    <img src="img/logo.png" alt="" />
+    <img src="img/logo.png" alt="Kafiil Logo" />
   </a>
   <ul class="navbar-nav" id="navbarMenusContainer">
     <div class="navbar-closer" id="navbarCloser">
-      <img src="img/icons/navbar/closer.svg" alt="" />
+      <img src="img/icons/navbar/closer.svg" alt="Navbar closer" />
     </div>
 
     <li class="nav-item">
       <a class="nav-link active" href="#">
         <span class="navbar-icon"
-          ><img src="img/icons/navbar/auctions.png"
+          ><img src="img/icons/navbar/auctions.png" alt="auctions"
         /></span>
         <span class="title"> Auctions </span>
       </a>
@@ -32,7 +44,7 @@
     <li class="nav-item">
       <a class="nav-link" href="#">
         <span class="navbar-icon"
-          ><img src="img/icons/navbar/contensts.png"
+          ><img src="img/icons/navbar/contensts.png" alt="contensts"
         /></span>
         <span class="title"> Contests </span>
       </a>
@@ -41,6 +53,7 @@
       <a class="nav-link" href="#">
         <span class="navbar-icon"
           ><img src="img/icons/navbar/project.png"
+          alt="project"
         /></span>
         <spanp class="title"> Project </spanp>
       </a>
@@ -48,7 +61,7 @@
     <li class="nav-item">
       <a class="nav-link" href="#">
         <span class="navbar-icon"
-          ><img src="img/icons/navbar/portfolios.png"
+          ><img src="img/icons/navbar/portfolios.png" alt="portfolios"
         /></span>
         <span class="title"> Portfolios </span>
       </a>
@@ -56,7 +69,7 @@
     <li class="nav-item">
       <a class="nav-link" href="#">
         <span class="navbar-icon"
-          ><img src="img/icons/navbar/freelancers.png"
+          ><img src="img/icons/navbar/freelancers.png" alt="freelancers"
         /></span>
         <span class="title"> Freelancers </span>
       </a>
@@ -64,24 +77,25 @@
     <li class="nav-item">
       <a class="nav-link" href="#">
         <span class="navbar-icon"
-          ><img src="img/icons/navbar/forum.png"
+          ><img src="img/icons/navbar/forum.png" 
+          alt="forum"
         /></span>
         <span class="title"> Forum </span>
       </a>
     </li>
   </ul>
   <div class="navbar-right-buttons">
-    <button class="icon-button messages-button">
-      <span class="icon"><img src="img/icons/navbar/messages.png" /></span>
+    <button class="icon-button messages-button" title="messages">
+      <span class="icon"><img src="img/icons/navbar/messages.png" alt="messages" /></span>
 
       <span class="count">10</span>
     </button>
-    <button class="icon-button notifications-button">
-      <span class="icon"><img src="img/icons/navbar/notifications.png" /></span>
+    <button class="icon-button notifications-button" title="notifications>
+      <span class="icon"><img src="img/icons/navbar/notifications.png" alt="notifications"  /></span>
 
       <span class="count">10</span>
     </button>
-    <button class="profile-menu" id="profileImageButton">
+    <button class="profile-menu" id="profileImageButton" title="profile menu">
       <div class="profile-image">
         <img src="img/profile-image.png" alt="" />
       </div>
@@ -95,7 +109,7 @@
         <li>
           <div class="user-container">
             <div class="profile-img online">
-              <img src="img/profile-image.png" alt="" />
+              <img src="img/profile-image.png" alt="porfile image" />
             </div>
             <div class="user-info">
               <p class="name">Ahmed Ali</p>
@@ -106,13 +120,13 @@
 
         <li>
           <div class="icon">
-            <img src="img/icons/navbar/profile.png" alt="" />
+            <img src="img/icons/navbar/profile.png"  alt="profile" />
           </div>
           <div class="text">My Profile</div>
         </li>
         <li>
           <div class="icon">
-            <img src="img/icons/navbar/dark-mode.png" alt="" />
+            <img src="img/icons/navbar/dark-mode.png" alt="change mode" />
           </div>
           <div class="text mode-container">
             Dark Mode
@@ -123,7 +137,7 @@
         </li>
         <li>
           <div class="icon">
-            <img src="img/icons/navbar/language.png" alt="" />
+            <img src="img/icons/navbar/language.png" alt="change language" />
           </div>
           <div class="text language-container">
             Language
@@ -131,20 +145,20 @@
               <span class="title"> العربية </span>
               <span class="divieder"></span>
               <span class="flag">
-                <img src="img/icons/navbar/arabic.png" alt="" />
+                <img src="img/icons/navbar/arabic.png" alt="language flag" />
               </span>
             </div>
           </div>
         </li>
         <li>
           <div class="icon">
-            <img src="img/icons/navbar/settings.png" alt="" />
+            <img src="img/icons/navbar/settings.png" alt="ettings" />
           </div>
           <div class="text">Account Settings</div>
         </li>
         <li>
           <div class="icon">
-            <img src="img/icons/navbar/logout.png" alt="" />
+            <img src="img/icons/navbar/logout.png" alt="logout" />
           </div>
           <div class="text logout">Logout</div>
         </li>
@@ -195,12 +209,14 @@
       <div class="reviews">(500)</div>
     </div>
     <div class="share">
-      <button class="icon-button share">
+      <button class="icon-button share" title="share service">
         <span class="icon">
           <img src="img/icons/share.png" alt="" srcset="" />
         </span>
       </button>
-      <button class="icon-button favorite" onclick="serviceFavoriteClicked(this)">
+      <button class="icon-button favorite"
+      title="favorite service"
+      onclick="serviceFavoriteClicked(this)">
         <span class="icon">
           <img src="img/icons/favorite.png" alt="" srcset="" class="empty" />
           <img src="img/icons/favorite-full.png" alt="" srcset="" class="full" />
@@ -300,6 +316,7 @@
             type="checkbox"
             class="addon-checkbox"
             name="add-on-1"
+            aria-label="add-on-item"
             id=""
             onclick="checkAddon(this)"
           />
@@ -323,7 +340,9 @@
           <input
             type="checkbox"
             class="addon-checkbox"
-            name="add-on-1"
+            name="add-on-2"
+            aria-label="add-on-item"
+
             id=""
             onclick="checkAddon(this)"
           />
@@ -347,7 +366,8 @@
           <input
             type="checkbox"
             class="addon-checkbox"
-            name="add-on-1"
+            name="add-on-3"
+            aria-label="add-on-item"
             onclick="checkAddon(this)"
             id=""
           />
@@ -382,7 +402,9 @@
       </div>
       <div class="total-price" id="totalPrice">$300</div>
     </div>
-    <button class="action-button purchase-button">Purchase</button>
+    <button class="action-button purchase-button"
+    title="purchase service"
+    >Purchase</button>
   </div>
 </section>
 <!-- X Purchase Service X -->
@@ -636,7 +658,9 @@
           cols="30"
           rows="10"
         ></textarea>
-        <button class="action-button post-review">Post Review</button>
+        <button class="action-button post-review"
+        title="post review"
+        >Post Review</button>
       </div>
     </div>
   </div>
@@ -715,7 +739,7 @@
       dolor.
     </div>
   </div>
-  <button class="action-button contact-button">Contact Me</button>
+  <button class="action-button contact-button" title="contact me">Contact Me</button>
 </div>
 <!-- Seller Card -->
 
@@ -1239,7 +1263,10 @@
     <footer>
       <!--#footer-->
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
   </body>
 </html>
